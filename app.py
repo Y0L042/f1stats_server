@@ -35,17 +35,17 @@ def hello_world():
 
 
 
-@app.route('/db')
-def get_teams():
-    with connect_to_database() as mydb:
-        cursor = mydb.cursor()
-        cursor.execute('''
-            SELECT * 
-            FROM teams
-        ''')
-        users = cursor.fetchall()
-        cursor.close()
-        return jsonify(users)
+# @app.route('/db')
+# def get_teams():
+#     with connect_to_database() as mydb:
+#         cursor = mydb.cursor()
+#         cursor.execute('''
+#             SELECT * 
+#             FROM teams
+#         ''')
+#         users = cursor.fetchall()
+#         cursor.close()
+#         return jsonify(users)
 
 
     
