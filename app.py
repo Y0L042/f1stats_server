@@ -13,19 +13,19 @@ CORS(app) # Enable CORS for the Flask app -> CORS (Cross-Origin Resource Sharing
 
 
 # Create a 'private_config.json' file, and add the details of your database there.
-def connect_to_database():
-	with open('private_config.json', 'r') as file:
-		config_data = json.load(file)
+# def connect_to_database():
+# 	with open('private_config.json', 'r') as file:
+# 		config_data = json.load(file)
 
 
-	mydb = mysql.connector.connect(
-	host=config_data['db_host'],
-	user=config_data['db_user'],
-	password=config_data['db_password'],
-	database=config_data['db_database']
-	)
+# 	mydb = mysql.connector.connect(
+# 	host=config_data['db_host'],
+# 	user=config_data['db_user'],
+# 	password=config_data['db_password'],
+# 	database=config_data['db_database']
+# 	)
 
-	return mydb
+# 	return mydb
 
 
 
